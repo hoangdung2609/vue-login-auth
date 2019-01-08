@@ -7,7 +7,9 @@ import { router } from './router/routes';
 import { store } from './vuex/store';
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import VeeValidate from 'vee-validate'
 
+Vue.use(VeeValidate)
 Vue.use(Vuetify)
 
 Vue.component('navbar-component', require('./components/layout/navbar.vue'));

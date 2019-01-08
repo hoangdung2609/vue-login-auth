@@ -11,15 +11,21 @@
         <passport-clients class="mb-4"></passport-clients>
         <passport-authorized-clients class="mb-4"></passport-authorized-clients>
         <passport-personal-access-tokens class="mb-4"></passport-personal-access-tokens>
-
+        <!--<app-toolbar></app-toolbar>-->
     </div>
 </template>
 
 <script>
+
+    // import AppToolbar from './AppToolbar';
+
     export default {
         data(){
             return {
             }
-        }
+        },
+
+
+
     }
 </script>
