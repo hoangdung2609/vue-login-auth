@@ -20,12 +20,10 @@ const ifAuthenticated = (to, from, next) => {
     next('/')
 }
 
-
 import Login from './../components/auth/login'
 import Register from './../components/auth/register'
 import PasswordEmail from '../components/auth/password/email'
 import PasswordReset from '../components/auth/password/reset'
-
 import AdminLayout from './../components/layout/layout'
 import Dashboard from './../components/dashboard'
 
@@ -68,8 +66,6 @@ const routes = [
         ]
     },
 ];
-
-
 
 export const router = new VueRouter({
     mode: 'history',

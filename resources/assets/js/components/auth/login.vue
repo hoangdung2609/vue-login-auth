@@ -6,7 +6,7 @@
                     <v-flex xs8 offset-xs2 sm8 offset-sm2 md6 offset-md3 mb-5>
                         <v-img src="http://bds.gdcvn.com/wp-content/uploads/2018/05/logo.png"></v-img>
                     </v-flex>
-                    <v-card class="elevation-6 border-radius">
+                    <v-card class="elevation-0 border-radius">
                         <v-form @submit.prevent="login">
                             <v-toolbar dark color="primary card-title">
                                 <h4 v-if="authErrors.has('invalid_credentials')" v-text="authErrors.get('invalid_credentials')"></h4>
@@ -50,7 +50,6 @@
 </template>
 
 <script>
-
     // import { validationMixin } from 'vuelidate'
     // import { required, email } from 'vuelidate/lib/validators'
 

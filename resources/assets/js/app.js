@@ -13,6 +13,8 @@ Vue.use(VeeValidate)
 Vue.use(Vuetify)
 
 Vue.component('navbar-component', require('./components/layout/navbar.vue'));
+Vue.component('toolbar', require('./components/layout/toolbar.vue'));
+Vue.component('take-leave-dataTable', require('./components/take-leave/listDataTable.vue'));
 Vue.component('passport-clients', require('./components/passport/Clients.vue'));
 Vue.component('passport-authorized-clients', require('./components/passport/AuthorizedClients.vue'));
 Vue.component('passport-personal-access-tokens', require('./components/passport/PersonalAccessTokens.vue'));
