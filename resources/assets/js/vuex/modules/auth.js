@@ -22,7 +22,7 @@ const actions = {
             'email':payload.email,
             'password':payload.password
         }
-
+        
         if(payload.action=='register'){
             actionUrl='/register';
             data = {
