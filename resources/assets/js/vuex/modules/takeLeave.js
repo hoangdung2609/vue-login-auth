@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 const state = {
     takeLeave: "",
-    status: ''    
+    status: ''
 }
 
 const getters = {
@@ -12,15 +12,21 @@ const getters = {
 }
 
 const actions = {
-    takeLeaveRequest: ({commit, dispatch}) => {
+    takeLeaveRequest: ({commit, dispatch}, payload) => {
+        let id = payload.id
         commit('takeLeaveRequest')
-        axios.get('http://timekeeping.gdc/api/take-leaves')
-            .then((resp) => {
-                commit("takeLeaveSuccess", resp.data)
-            })
-            .catch((err) => {
-                commit("takeLeaveError")
-            })
+
+        axios.get('http://timekeeping.gdc/api/take-leaves', {
+            params: {
+                id: id
+            }
+        })
+        .then((resp) => {
+            commit("takeLeaveSuccess", resp.data)            
+        })
+        .catch((err) => {
+            commit("takeLeaveError")
+        })
     }
 }
 

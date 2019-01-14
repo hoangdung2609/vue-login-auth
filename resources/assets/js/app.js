@@ -21,7 +21,7 @@ Vue.component('passport-personal-access-tokens', require('./components/passport/
 
 const app = new Vue({
     el: '#app',
-    created(){
+    created(){        
         if (this.$store.getters.isAuthenticated) {
             this.$store.dispatch('userRequest');
         }

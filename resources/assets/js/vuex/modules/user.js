@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 const state = {
     status: '',
-    profile: {}
+    profile: {},    
 }
 
 const getters = {
@@ -35,7 +35,7 @@ const mutations = {
     },
     userError: (state) => {
         state.status = 'error';
-    }
+    },
 }
 
 export default {
